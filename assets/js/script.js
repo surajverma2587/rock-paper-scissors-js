@@ -1,31 +1,30 @@
 console.log("Hi everyone");
 
 // should return r s p or R S P??
-const getUserValue = function(){
-
-    return
-}
+const getUserValue = function () {
+  const userValue = prompt("Choose Rock, Paper or Scissors");
+  return userValue;
+};
 
 // validate input true/false
-const validateValue = function(){
-
-    return
-}
+const validateValue = function () {
+  return;
+};
 
 // get computer value r s p
-const getComputerValue = function(){
-    return
-}
+const getComputerValue = function () {
+  return;
+};
 
 // game logic win lose draw
-const getGameResult = function(){
-    return
-}
+const getGameResult = function () {
+  return;
+};
 
 //  calculate and log result
-const displayScore = function(){
-    return
-}
+const displayScore = function () {
+  return;
+};
 
 const playerDetails = {
   wins: 0,
@@ -34,3 +33,7 @@ const playerDetails = {
 };
 
 let inProgress = true;
+
+// get user value
+const userValue = getUserValue();
+console.log(userValue);
