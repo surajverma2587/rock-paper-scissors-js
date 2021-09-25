@@ -41,7 +41,7 @@ const userValue = getUserValue();
 const isValid = validateValue(userValue);
 console.log(isValid);
 
-// taking valid values
+// taking valid values.
 if (isValid) {
 } else {
   alert("This is not a valid answer, try again");
