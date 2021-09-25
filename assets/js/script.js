@@ -26,7 +26,24 @@ const getGameResult = function () {
 };
 
 //  calculate and log result
-const displayScore = function () {
+const displayScore = function (gameResult) {
+  if (gameResult === "win") {
+    playerDetails.wins += 1;
+  } else if (gameResult === "lose") {
+    playerDetails.loses += 1;
+  } else {
+    playerDetails.draws += 1;
+  }
+
+  const message =
+    "Wins: " +
+    playerDetails.wins +
+    " | Loses: " +
+    playerDetails.loses +
+    " | Draws: " +
+    playerDetails.draws;
+
+  alert(message);
   return;
 };
 
@@ -50,6 +67,7 @@ if (isValid) {
   // get computer Value
   const computerValue = getComputerValue();
   console.log(userValue, computerValue);
+  displayScore();
 } else {
   alert("This is not a valid answer, try again");
 }
