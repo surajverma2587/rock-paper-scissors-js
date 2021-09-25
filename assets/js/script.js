@@ -26,3 +26,11 @@ const getGameResult = function(){
 const displayScore = function(){
     return
 }
+
+const playerDetails = {
+  wins: 0,
+  draws: 0,
+  loses: 0,
+};
+
+let inProgress = true;
