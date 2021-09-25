@@ -36,4 +36,13 @@ let inProgress = true;
 
 // get user value
 const userValue = getUserValue();
-console.log(userValue);
+
+// validating value
+const isValid = validateValue(userValue);
+console.log(isValid);
+
+// taking valid values
+if (isValid) {
+} else {
+  alert("This is not a valid answer, try again");
+}
