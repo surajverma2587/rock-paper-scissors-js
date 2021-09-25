@@ -3,12 +3,16 @@ console.log("Hi everyone");
 // should return r s p or R S P??
 const getUserValue = function () {
   const userValue = prompt("Choose Rock, Paper or Scissors");
-  return userValue;
+  return userValue.toLowerCase();
 };
 
 // validate input true/false
-const validateValue = function () {
-  return;
+const validateValue = function (userValue) {
+  if (userValue === "r" || userValue === "s" || userValue === "p") {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 // get computer value r s p
