@@ -13,7 +13,11 @@ const validateValue = function (userValue) {
 
 // get computer value r s p
 const getComputerValue = function () {
-  return;
+  const validValues = ["r", "s", "p"];
+  // randomly generating numbers
+  const randomIndex = Math.floor(Math.random() * validValues.length);
+  const randomValue = validValues[randomIndex];
+  return randomValue;
 };
 
 // game logic win lose draw
@@ -43,6 +47,9 @@ console.log(isValid);
 
 // taking valid values.
 if (isValid) {
+  // get computer Value
+  const computerValue = getComputerValue();
+  console.log(userValue, computerValue);
 } else {
   alert("This is not a valid answer, try again");
 }
