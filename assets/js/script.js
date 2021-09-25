@@ -8,11 +8,7 @@ const getUserValue = function () {
 
 // validate input true/false
 const validateValue = function (userValue) {
-  if (userValue === "r" || userValue === "s" || userValue === "p") {
-    return true;
-  } else {
-    return false;
-  }
+  return userValue === "r" || userValue === "s" || userValue === "p";
 };
 
 // get computer value r s p
